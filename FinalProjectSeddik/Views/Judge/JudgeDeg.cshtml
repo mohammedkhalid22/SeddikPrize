@@ -1,0 +1,54 @@
+﻿@model IEnumerable<Projects>
+
+    <!-- start table -->
+    
+        <div class="judge">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col" class="none">الاسم بالكامل</th>
+                        <th scope="col">التخصص</th>
+                        <th scope="col" class="none">رابط المشروع</th>
+                        <th scope="col" class="none">النتيجه</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                <tr>
+
+                    <td>@item.Name</td>
+
+                    <td>@item.Specialization</td>
+
+                    <td><a href="@item.DriveLink">@item.DriveLink</a></td>
+               
+                    <td>
+                        @if (item.Result == null)
+                        {
+                            <span>لم يتم تقييمه</span>
+                        }
+                        else
+                        {
+                            @item.Result
+                        }
+                    </td>
+             
+<td>
+
+                            <a class="btn btn-secondary " id="btnrule" href="/Judge/CompRate/@item.Id">
+                                تقييم
+                            </a>
+
+
+                        </td>
+
+                    </tr>
+                    
+                 }
+                 
+                </tbody>
+            </table>
+        </div>
+        <!-- end table -->

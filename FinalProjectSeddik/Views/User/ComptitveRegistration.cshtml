@@ -1,0 +1,78 @@
+﻿@model compRegs
+
+@if(ViewBag.user.IsRegSent==true)
+{
+    <h2 style="margin-top: 12%;
+                margin-bottom: 1.6%;
+                margin-left: 16%;padding-bottom: 2.5%;">لقد قمت بارسال طلب الانضمام للمسابقة بالفعل ، اذا كان هناك مشكلة يرجى ارسال رسالة لنا</h2>
+}
+else
+{
+    <main>
+    <div class="container register-prize">
+        
+        <h3 class="registration">التقديم للمسابقه</h3>
+        <h6 style="color:red"><strong>@TempData["Message"]</strong></h6>
+        <form method="post" asp-action="ComptitveRegistration" asp-controller="User">
+            <div class="user-details">
+                
+                <!-- full name -->
+                <!-- e-mail -->
+                <div class="input-box">
+                    <span class="details" > البريد الاكتروني</span>
+                    <input type="text" asp-for="Email" required placeholder="تاكد انه مطابق لبريدك الالكتروني">
+                </div>
+                <!-- e-mail -->
+                <!-- id number -->
+                <div class="input-box">
+                    <span class="details"> الرقم القومي</span>
+                    <input type="text" asp-for="NationalId" required placeholder="تاكد انه مطابق لرقمك القومي">
+                </div>
+                <!-- id number -->
+                <!-- mobile -->
+                <div class="input-box">
+                    <span class="details">رقم  الهاتف</span>
+                    <input type="text" asp-for="MobileNumber" required>
+                </div>
+                <!-- mobile -->
+                <!-- govrnement -->
+                <div class="input-box">
+                    <span class="details">العنوان</span>
+                    <input type="text" asp-for="Address" required>
+                </div>
+                <!-- govrnement -->
+                <!-- govrnement -->
+
+                <div class="input-box">
+                    <span class="details">الحساب البنكي</span>
+                    <input type="text" asp-for="BankAccount" required>
+                </div>
+
+                <!-- govrnement -->
+                <!-- feild -->
+                <div class="input-box">
+                    <span class="details" style="margin-bottom: -12px;"> التخصص</span>
+                    <select class=" details input-box" asp-for="Specialization" required>
+                        <option value="مجال المعلوماتيه و الذكاء الاصطناعي">مجال المعلوماتيه و الذكاء الاصطناعي</option>
+                        <option value="مجال العلوم الطبيه و التطبيقيه">مجال العلوم الطبيه و التطبيقيه</option>
+                        <option value="مجال الادب في كتابه الروايه">مجال الادب في كتابه الروايه</option>
+                    </select>
+                </div>
+                <!-- feild -->
+                
+            </div>
+            <!-- button -->
+            <div class="button">
+                <input onclick="addData()" type="submit" name="" value="ارسال">
+            </div>
+            <!-- button -->
+
+        </form>
+    </div>
+</main>
+
+}
+
+
+
+

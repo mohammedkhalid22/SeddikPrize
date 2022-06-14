@@ -1,0 +1,40 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model FinalProjectSeddik.Models.ApplicationUser
+<main>
+    <div class="container">
+        <div class="profile-page row">
+            <div class="info row">
+                <div class="img-profile col-sm-12 col-lg-4 col-xl-4">
+                    <img src="~/image/profile1.jpg" alt="">
+                </div>
+                <div class="info-group col-sm-12 col-lg-8 col-xl-8">
+                    <div class="name">
+                        <label asp-for="Name">الاسم</label>
+                        <input asp-for="Name" type="text" name="name" id="name" disabled>
+                    </div>
+                    <div class="email">
+                        <label asp-for="Email">البريد الالكتروني</label>
+                        <input asp-for="Email" type="email" name="email" id="email" disabled>
+                    </div>
+                    <div class="phone">
+                        <label asp-for="mobileNumber">رقم الهاتف</label>
+                        <input asp-for="mobileNumber" type="text" name="phone" id="phone" disabled>
+                    </div>
+                    <div class="National_ID">
+                        <label asp-for="NationalID">الرقم القومي</label>
+                        <input asp-for="NationalID" type="text" name="National_ID" id="National_ID" disabled>
+                    </div>
+                    <div class="type">
+                        <label asp-for="gender">النوع</label>
+                        <input asp-for="gender" type="text" name="type" id="type" disabled>
+                    </div>
+                    <div class="Specialization">
+                        <label asp-for="Specialization">التخصص</label>
+                        <input asp-for="Specialization" type="text" name="Specialization" id="Specialization" disabled>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

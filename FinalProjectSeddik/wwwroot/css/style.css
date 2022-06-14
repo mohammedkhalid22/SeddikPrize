@@ -1,0 +1,1629 @@
+body
+{
+    background: var(--white) !important;
+    color: var(--blue) !important;
+}
+
+
+:root{
+  --blue:#647295;
+  --white:#f2ebe5;
+  --purple:#9f496e;
+  --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.15)
+}
+
+/* ******************************************** All Acount ********************************* */
+
+/* header section start */
+
+nav
+{
+    padding-right: 100px;
+    padding-left: 100px;
+    background: var(--white);
+    direction: rtl;
+    box-shadow: var(--box-shadow);
+}
+
+
+.nav-item .nav-link{display: block;
+  line-height: 36px;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 900;
+  color: var(--blue);
+  transition: 0.15s;}
+  
+.nav-item .nav-link:hover{
+  color:var(--blue);
+}
+
+.nav-item .nav-link:focus{
+  color: var(--blue);
+}
+
+.phone {
+    box-shadow: var(--box-shadow);
+    border-radius: 30px;
+    margin: auto 2px;
+    background: none;
+}
+
+.navbar-nav .dropdown-menu
+{
+  background: var(--white);
+  border-radius: 20px;
+  margin: auto;
+}
+
+.navbar-nav .dropdown-menu li a
+{
+  color: var(--blue);
+  text-align: center;
+}
+
+.navbar-nav .dropdown-menu li a:hover
+{
+  background-color: var(--blue);
+  border-radius: 10px;
+  color: var(--white);
+}
+
+.login-icon
+{
+  cursor: pointer;
+  margin-right: 5.5rem;
+  height: 45px;
+  line-height: 2.5rem;
+  width: 45px;
+  text-align: center;
+  color: var(--blue);
+  border-radius: 50%;
+  background: #ffffeb;
+}
+
+.login-icon:hover
+{
+  color: var(--white);
+  background-color: var(--blue);
+  transform: rotate(360deg);
+}
+
+.logo-image
+{
+  width: 120px;
+}
+
+.navbar-toggler
+{
+  color: var(--blue);
+}
+
+/* media query */
+@media only screen and (max-width:992px){
+	nav
+  {
+    background-color: var(--white) !important;
+    text-align: center !important;
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+    direction: ltr !important;
+  }
+
+	.nav-item > .nav-link{
+		color: var(--blue) !important;
+  }
+  .nav-item > .nav-link:hover{
+		color: var(--white) !important;
+    background-color: var(--blue) !important;
+    border-radius: 20px;
+  }
+  .logo{
+			font-weight: 600!important;
+  }
+  .content-banner .first-title{font-size: 30px !important;
+			}
+      .header-btn-div
+      {
+        align-items: center !important;
+      }    
+        
+      .login-icon
+      {
+        margin-left: 2.5rem;
+      }
+
+      .logo-image
+      {
+        display: none !important;
+      }
+
+.navbar-toggler
+{
+  margin-left: 50% !important;
+}
+}
+
+/* login-form start */
+
+.login-form {
+    margin-top: 124px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+    .login-form form, .register-form form {
+        width: 50rem;
+        padding: 4rem;
+        background: var(--white);
+        text-align: center;
+        border-radius: 100px;
+    }
+
+        .login-form form img {
+            width: 150px;
+            margin-bottom: 25px;
+        }
+
+        .login-form form input[type="password"], .login-form form input[type="email"] {
+            border-bottom-right-radius: 30px !important;
+            border-top-right-radius: 30px !important;
+            text-align: right;
+        }
+
+.input-group-text {
+    border-bottom-left-radius: 30px !important;
+    border-top-left-radius: 30px !important;
+    background: #fff !important;
+}
+
+.login-form #login {
+    background: var(--blue);
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #f2ebe5;
+    color: var(--white);
+    border-radius: 22px;
+    width: 10rem;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 1%;
+}
+
+.login-form #registration {
+    background: none;
+    border: none;
+    text-decoration: underline;
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.login-form .element {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    color: var(--blue);
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.login-form form p {
+    margin-top: 10px;
+}
+
+/* login-form end */
+
+/* register start */
+
+.form-register
+{
+    width: 50% ;
+    text-align: center; 
+    margin: 120px auto 0 auto;
+}
+.form-register img
+{
+    width: 150px; 
+    margin-bottom: 25px;
+}
+.form-register .group
+{
+    margin: auto auto 3%;
+}
+.form-register input
+{
+    display: block;
+    width: 100%;
+    direction: rtl;
+    margin-top: 1%;
+    border-radius:20px ;
+    padding-right: 2%;
+    border: solid #647295 .14rem;
+    background-color: #f2ebe5 ;
+    color: #647295;
+}
+.form-register input[type="date"]
+{
+    padding-left: 3%;
+}
+.form-register a
+{
+    text-decoration: none;
+}
+.form-register a input
+{
+    width: 30%;
+    display: table-caption;
+    font-size: 100%;
+}
+.form-register select
+{
+    margin: .5% auto;
+    border-radius: 20px;
+    background: #f2ebe5;
+    direction: rtl;
+    color: #647295;
+    border: solid #647295 .14rem;
+    width: 100%;
+}
+
+
+
+
+/* header section end */
+
+/* ******* Home Page ********** */
+
+/* Top-Home section start */
+
+.top-home
+{
+    background: url(../image/background-top-home.jpg);
+    position: relative;
+    z-index: 1;
+    padding: 280px 0 180px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top-home::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(100,114,149,.95);
+    z-index: -1;
+}
+
+.bg-cover
+{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.top-home .top-home-content h4 {
+    font-weight: 700;
+    line-height: 65px;
+    color: var(--white);
+    text-align: center;
+}
+
+.top-home .top-home-content h2 {
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 65px;
+    color: var(--white);
+    text-align: center;
+}
+
+.top-home .top-home-content p {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--white);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.top-home .top-home-left
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    z-index: 1;
+}
+
+.top-home .shape
+{
+    position: absolute;
+    right: -40px;
+    bottom: -40px;
+    z-index: -1;
+}
+/* Top-Home section end */
+
+/* Star what Prize */
+
+.What-content{
+  text-align: center;
+  padding: 20px;
+  margin-top: 80px;
+  margin-bottom: 10px;
+}  
+
+.What-content h2
+{
+  font-size: 45px;
+  line-height: 55px;
+  font-weight: 600;
+}
+
+.What-content p
+{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  margin: 30px auto 20px;
+}
+
+/* End What Prize  */
+
+
+/* star fields */
+.fields h2
+{
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.field {
+    padding: 35px 30px;
+    border-radius: 20%;
+    background: var(--white);
+    position: relative;
+    transition: all 0.3s ease-out 0s;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.field .field-icon {
+    width: 87px;
+    height: 87px;
+    background: var(--purple);
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.field .field-icon i {
+    font-size: 40px;
+    color: var(--white);
+}
+
+.field .field-content h4
+{
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 25px;
+}
+
+.field .field-content p
+{
+    font-weight: 300;
+    line-height: 24px;
+    font-size: 16px;
+}
+/* end fields  */
+
+/*start section goals*/
+.goals
+{
+    padding: 20px;
+    margin: 60px;
+}
+
+.goals h2
+{
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.goals-icon {
+    width: 87px;
+    height: 87px;
+    background: #9f496e;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.goals-icon i {
+    font-size: 40px;
+    color: #f2ebe5;
+}
+
+.goals-content p
+{
+    font-weight: 300;
+}
+
+/*end section goals*/
+
+/* media quiery Home Page */
+
+@media only screen and (max-width: 1200px)
+{
+    .top-home .top-home-left img
+    {
+        width: 0% !important;
+    }
+    .top-home .shape
+    {
+        width: 0% !important;
+    }
+
+
+}
+
+
+/* ******** About Page ********** */
+
+/*start information about seddiq */
+.seddeq-info
+{
+  text-align: center;
+  padding-top: 60px;
+}
+.seddeq-info h2
+{
+  font-weight: 900;
+  margin-top: 80px;
+}
+.seddeq-info h2 span
+{
+  font-size: 20px;
+}
+.seddeq-info p
+{
+  padding-top: 20px;
+  font-weight: 900;
+  padding: 40px;
+  font-size: larger;
+}
+/*end information about seddiq */
+
+/*Start importatn seddeq afifi books*/
+
+/*FRONT*/
+.seddeq-imp-books-img
+{
+  width: 100%;
+  height:300px;
+}
+
+.seddeq-imp-books h1
+{
+  text-align: center;  
+  font-weight: 900;
+  margin-bottom: 50px;
+}
+/*FRONT*/
+
+/*BACK*/
+.list-flip-card-back
+{
+  
+  text-align: center;
+  direction: rtl;
+  margin-top: 10px;
+  font-weight: 500;
+  line-height: 16px;
+  margin-bottom: 60px;
+}
+/*BACK*/
+
+/*End important seddeq afifi books*/
+
+/*Start qualification*/
+.goals-icon {
+  width: 50px;
+  height: 50px;
+  background: #9f496e;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.goals-icon i {
+  font-size: 30px;
+  color: #f2ebe5;
+}
+.qualifications
+{
+  margin-top: 100px;
+}
+.qualificatin-img
+{
+  width: 100%;
+  height:300px;
+}
+.qualifications h1
+{
+  padding-top: 8px;
+  text-align: center;
+  font-weight: 900;
+}
+.qualifications ul
+{
+  text-align: center;
+  margin-top:23%;
+  padding: 20px;
+  font-weight: 900;
+  font-size: larger;
+}
+/*end qualification*/
+
+/*START JOBS AND ACHIEVMENT*/
+.jobs-achievment
+{
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+.job-img 
+{
+  text-align: center;
+}
+
+.jobs-achievment-img
+{
+  width: 76%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+
+}
+
+.list-achievment h2
+{
+  font-weight: 900;
+  text-align: right;
+}
+.list-achievment ul
+{
+  direction: rtl;
+  padding: 20px;
+  font-weight: 900;
+}
+.list-achievment ul li
+{
+  padding: 10px;
+  font-size: larger;
+  line-height: 27px;
+}
+@media only screen and (max-width: 768px)
+{
+  .list-achievment h2
+  {
+    text-align: center;
+  }
+}
+
+/*END JOBS AND ACHIEVMENT*/
+
+
+#morem {display: none;}
+#more {display: none;}
+#myBtn
+{
+  background-color:#647295;
+  color: white;
+  float: left;
+}
+#myBtnm
+{
+  background-color:#647295;
+  color: white;
+  float: left;
+
+}
+
+
+#more {display: none;}
+
+/*Start Flip Card 1*/
+
+.flip-card {
+  background-color: transparent;
+  height: 439px;
+  border: 0px solid black;
+  perspective: 1000px; 
+  margin-top: 30px;
+  margin-bottom: 28px;
+}
+
+.flip-card-inner {
+
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden; 
+}
+
+
+.flip-card-front {
+  background-color: white;
+}
+
+
+.flip-card-back {
+  background-color: white;
+  transform: rotateY(180deg);
+  
+}
+.flip-card-back ul li
+{
+  list-style:none;
+  padding: 10px;
+}
+
+/*End Flip Card1*/
+
+/* start comunity activies */
+.community-activities-section
+{
+  margin-top: 30px;
+}
+.img-activity
+{
+  float: right;
+  border-radius: 50%;
+  width: 72%;
+  float: right;
+}
+.community-activities-list
+{
+  width: 50%;
+}
+.community-activities-list h2 
+{
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 22px;
+  font-weight: 900;
+}
+.community-activities-list ul
+{
+  direction: rtl;
+  font-weight: 900;
+  padding: 22px;
+  font-size: larger;
+}
+.community-activities-list ul li
+{
+  padding: 10px;
+}
+
+/* end comunity activies */
+
+/* media query About Page */
+@media only screen and (min-width: 768px) and (max-width: 1200px) 
+{
+  .flip-card-front, .flip-card-back
+  {
+    
+    height: 515px !important;
+    margin-bottom: 50px;
+    
+  }
+  .flip-card
+  {
+    margin-bottom: 77px !important;
+  }
+} 
+
+@media only screen and (max-width: 768px)
+{
+  .img-activity
+  {
+    display: none;
+  }
+  .community-activities-list h2
+  {
+    text-align: center;
+  }
+  .jobs-achievment-img
+  {
+    display: none;
+  }
+  .list-achievment h2
+  {
+    text-align: center !important;
+  }
+}
+
+
+/* ************* field Page ****************** */
+
+/* Override UGG site */
+#main
+{
+  width: 100%;
+  padding:0;
+}
+.content-asset p
+{
+  margin:0 auto;
+}
+.breadcrumb {display:none;}
+
+/* Helpers */
+
+.margin-top-10
+{
+  padding-top:10px;
+}
+.margin-bot-10 
+{
+  padding-bottom:10px;
+}
+
+
+/* Typography */
+
+#global-style h1 
+{
+  font-weight:400; 
+  text-transform: uppercase; 
+  padding:0; 
+  margin:0;
+  line-height: 106px;
+}
+#global-style h2
+{
+  text-align:center; 
+  padding-bottom: 14px;
+  padding-top: 20px;
+}
+#global-style h3 
+{
+  font-family:'Oswald', sans-serif;
+  line-height:0; font-weight:400;
+  text-transform: uppercase; 
+}
+#global-style p 
+{
+  font-family:'Source Sans Pro', sans-serif; 
+  font-weight:900;
+  line-height:37px; 
+  direction: rtl;
+}
+
+
+/* Section - Block */   
+.p-style
+{
+  text-align: center;
+}
+#global-style .block 
+{
+  background: #f2ebe5;  
+  width:1200px; 
+  margin:0 auto; 
+  text-align:justify;
+}
+#global-style .block-gray {
+  background: #f2ebe5;
+  padding: 60px;
+}
+#global-style .section-overlay-mask 
+{
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  opacity: 0.70;
+}
+
+/* Section - Parallax */
+/**************************/
+#global-style .parallax-one 
+{
+  padding-top: 356px; 
+  padding-bottom: 200px; 
+  overflow: hidden; 
+  position: relative; 
+  width: 100%; 
+  background-image: url(../image/field1.jpeg); background-attachment: fixed; 
+  background-size: cover; -moz-background-size: cover; 
+  -webkit-background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: top center;
+}
+#global-style .parallax-two 
+{
+  padding-top: 200px; 
+  padding-bottom: 200px; 
+  overflow: hidden; 
+  position: relative; 
+  width: 100%; 
+  background-image: url(../image/field2.jpeg); 
+  background-attachment: fixed; 
+  background-size: cover; 
+  -moz-background-size: cover; 
+  -webkit-background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center center;
+}
+#global-style .parallax-three 
+{
+  padding-top: 200px; 
+  padding-bottom: 200px; 
+  overflow: hidden; 
+  position: relative; 
+  width: 100%; 
+  background-image: url(../image/field3.jpeg); 
+  background-attachment: fixed; 
+  background-size: cover; 
+  -moz-background-size: cover; 
+  -webkit-background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center center;
+}
+
+/* Extras */
+/**************************/
+#global-style .line-break 
+{
+  border-bottom:1px solid ; 
+  width: 150px; margin:0 auto;
+}
+
+/* start General conditions for candidacy  */
+.list
+{
+    direction: rtl;
+    font-weight: bold;
+    line-height: 41px;
+    margin-bottom: 60px;
+}
+/* start General conditions for candidacy  */
+/* read more */
+#more {display: none;}
+#myBtn
+{
+  background-color:#647295;
+  color: white;
+  float: left;
+}
+/* read more */
+
+/* Media Queries Fields Page */
+/**************************/
+@media screen and (max-width: 1200px) 
+{
+  #global-style .block
+  {
+    width:950px;
+  }
+
+  #global-style h2 
+    {
+      font-size:30px;
+    }
+
+}
+@media screen and (max-width: 959px) 
+{
+  #global-style .block
+  {
+    width:  750px;
+  }
+
+#global-style h2 
+  {
+    font-size:30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #global-style .block 
+  {
+    width:478px;
+    padding:10px;
+  }
+  #global-style h2 
+  {
+    font-size:30px;
+  }
+}
+@media screen and (max-width: 479px) 
+{
+    #global-style .block 
+    {
+      width:290px;
+    }
+}
+/* *********footer start********** */
+
+.footer-10 {
+  background: rgba(100,114,149,.99);
+}
+
+.footer-10 .con.con-1
+{
+  background: rgba(77, 91, 126, .4);
+}
+
+.footer-10 .con-info .icon {
+  width: 50px;
+  height: 50px;
+  background: #9f496e;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.footer-10 .con-info .icon svg {
+  color: #f2ebe5;
+}
+
+.footer-10 .con-info .text
+{
+  padding-top: 20px;
+}
+
+.footer-10 .con-info span
+{
+  color: #f2ebe5;
+}
+
+.footer-10 .con.con-2 {
+  background: rgba(77, 91, 130, .6);
+}
+
+.footer-10 .con.con-3 {
+  background: rgba(77, 91, 134, .8);
+}
+
+.footer-10 .border-top, .footer-10 .border-bottom {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.footer-10 p {
+  color: #f2ebe5;
+  /* text-align: center; */
+}
+
+.footer-10 p a {
+  color: #f2ebe5;
+}
+
+.ftco-footer-social li {
+  list-style: none;
+  margin: 0 10px 0 0;
+  display: inline-block;
+}
+
+.footer-10 .ftco-footer-social li a {
+  background: rgba(255, 255, 255, 0.1);
+  color: #f2ebe5;
+}
+
+.footer-icon,.copyright
+{
+  text-align: center;
+}
+/* footer end */
+
+
+
+/* ******************************************** user acount *********************************** */
+
+/* header start */
+.dropdown-menu
+{
+  background-color: var(--white) !important;
+  border-radius: 1.25rem !important;
+  margin-left: 10px !important;
+}
+
+.nav-profile
+{
+  direction: ltr !important;
+  color: var(--blue) !important;
+}
+
+.nav-profile img
+{
+  width: 50px; 
+  height: 50px; 
+  border-radius: 100px;
+}
+
+.navbar-toggler-user
+{
+  margin-left: 60% !important;
+}
+
+@media only screen and (max-width:992px){
+  .nav-profile
+  {
+    margin-left: 40% !important;
+  }
+  .nav-profile span
+  {
+    display: none !important;
+  }
+}
+/* end header */
+
+
+/* start profile page  */
+.profile-page
+{
+  direction: rtl;
+}
+.profile-page .info
+{
+  margin: 12% auto 2%;
+  text-align: center;
+  background: rgb(0 0 0 / 1%);
+  box-shadow: var(--box-shadow);
+  direction: ltr;
+}
+.profile-page div img
+{
+  width: 250px;
+  height: 250px;
+  margin: 30% auto;
+  border-radius: 50%;
+  border: solid var(--blue) .4rem;
+
+}
+.profile-page .info-group
+{
+  direction: rtl;
+  text-align: left;
+  margin: auto;
+}
+.profile-page .info-group div
+{
+  margin-top: 2%;
+  margin-left: auto;
+}
+.profile-page .info-group div label
+{
+  font-size: 20px;
+}
+.profile-page .info-group div input
+{
+  text-align: left;
+  padding-left: 15px;
+  border-radius: 20px;
+  width: 53%;
+  color: var(--blue);
+  border: solid var(--blue) 0.1rem;
+}
+
+.profile-page .info-group div #type,
+.profile-page .info-group div #Specialization,
+.profile-page .info-group div #job
+{
+  text-align: right;
+  padding-right: 15px;
+}
+
+@media only screen and (max-width:1200px)
+{
+  .profile-page .info
+  {
+    margin: 14% auto 2%;
+  }
+}
+
+@media only screen and (max-width:991px)
+{
+  .profile-page div img
+  {
+    margin: 1% auto;
+  }
+  .profile-page .info-group
+  {
+    text-align: center;
+    margin-bottom: 3%;
+  }
+  .profile-page .info-group div label
+  {
+    display: block;
+    margin: .5% auto;
+  }
+}
+
+@media only screen and (max-width:770px)
+{
+  .profile-page .info
+  {
+    margin: 18% auto 2%;
+  }
+}
+
+/* end profile page  */
+
+/* start Change page */
+.change-page
+{
+  direction: rtl;
+}
+.change-page ul
+{
+  background: rgb(0 0 0 / 2%);
+  margin-top: 122%;
+  list-style-type: none;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+.change-page ul li 
+{
+  padding: 6px;
+  text-align: center;
+  cursor: pointer;
+}
+.change-page ul li:hover
+{
+  padding: 8px;
+  box-shadow: var(--box-shadow);
+
+}
+.change-page ul li a
+{
+  text-decoration: none;
+  color: var(--blue);
+}
+
+    .change-page .info {
+        margin-left: 20%;
+        margin: 16% auto 5%;
+        text-align: center;
+        background: rgb(0 0 0 / 1%);
+        box-shadow: var(--box-shadow);
+        direction: ltr;
+    }
+.change-page .img-profile img
+{
+  width: 250px;
+  height: 250px;
+  margin: 10% auto;
+  border-radius: 50%;
+  border: solid var(--blue) .4rem;
+}
+.change-page .img-profile input
+{
+  display: none;
+}
+.change-page .img-profile label
+{
+  text-align: center;
+  background: var(--blue);
+  box-shadow: var(--box-shadow);
+  border-radius: 24px;
+  font-size: 15px;
+  cursor: pointer;
+  border: solid 0.3em;
+  color: var(--white);
+  padding: 3%;
+  margin-bottom: 4%;
+}
+.change-page .info-group
+{
+  direction: rtl;
+  text-align: center;
+  margin: auto;
+}
+.change-page .info-group div
+{
+  margin-top: 2%;
+  margin-left: auto;
+}
+.change-page .info-group div label
+{
+  display: block;
+  font-size: 20px;
+  margin: 2% auto;
+}
+.change-page .info-group div input
+{
+  text-align: center;
+  padding-left: 15px;
+  border-radius: 20px;
+  width: 60%;
+  color: var(--blue);
+  border: solid var(--blue) 0.1rem;
+}
+
+.change-page .info-group div #type,
+.change-page .info-group div #Specialization,
+.change-page .info-group div #job
+{
+  text-align: right;
+  padding-right: 15px;
+}
+
+.change-page .info-group div input[type="submit"]
+{
+  text-align: center;
+  border-radius: 20px;
+  width: 21%;
+  color: var(--white);
+  border: solid var(--white) 0.1rem;
+  background: var(--blue);
+}
+
+@media only screen and (max-width:1200px)
+{
+  .change-page .info
+  {
+    margin: 20% auto 2%;
+  }
+  .change-page ul 
+  {
+    margin-top: 153%;
+  }
+}
+
+@media only screen and (max-width:991px)
+{
+  .change-page ul
+  {
+    margin-top: 19%;
+  }
+  .change-page .info
+  {
+    margin: 4% auto 2%;
+  }
+  .change-page div img
+  {
+    display: block;
+    margin: 2% auto !important;
+  }
+  .change-page .info-group
+  {
+    text-align: center;
+    margin-bottom: 3%;
+  }
+  .change-page .info-group div label
+  {
+    display: block;
+    margin: .5% auto;
+  }
+}
+
+@media only screen and (max-width:770px)
+{
+  .change-page ul
+  {
+    margin-top: 25%;
+  }
+}
+
+
+/* end cahnge page */
+
+/********* start register Prize Page ********** */
+
+.register-prize
+{
+  background: rgb(0 0 0 / 1%);
+  box-shadow: var(--box-shadow);
+  padding: 25px 30px;
+  border-radius: 5px;
+  direction: rtl;
+  margin-top: 10%;
+  margin-bottom: 3%;
+}
+
+.register-prize h3
+{
+  text-align: center;
+}
+
+.register-prize .title
+{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.register-prize .title::before
+{
+    content: '' ;
+    position: absolute;
+    height: 3px;
+    width:30px;
+    left: 0;
+    bottom: 0;
+    background-color: #647295;
+}
+
+.register-prize form .user-details
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .user-details .input-box
+{  
+    margin: 20px 0 12px 0; 
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 0;
+}
+.user-details .input-box .details 
+{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user-details .input-box input 
+{
+    height: 35px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    color: var(--blue);
+}
+.user-details .input-box select 
+{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    color: var(--blue);
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #647295;
+
+}
+form .gender-details .gender-title
+{
+    font-size: 20px;
+    font-weight: 500;
+}
+form .gender-details .category
+{
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+.gender-details .category label 
+{
+    display:flex;
+    align-items: center;
+}
+.gender-details .category .dot
+{
+    height: 18px;
+    width: 18px;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3 ease;
+}
+#dot-1:checked ~ .category label .one,
+#dot-1:checked ~ .category label .two,
+#dot-1:checked ~ .category label .three{
+    border-color: #d9d9d9;
+    background-color: #647295;
+}
+.register-prize input [type="radio"]
+{
+    display: none;
+}
+
+.form-check 
+{
+    text-align: right;
+    direction: rtl;
+    display: inline;
+}
+
+.register-prize .button
+{
+    height: 45px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.register-prize .button input
+{
+    height: 100%;
+    width: 15%;
+    outline: none;
+    color: var(--blue);
+    background-color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+.gender-select
+{
+    width: 30%;
+    margin-top: 30px;
+}
+/*  Media Queries register Prize Page  */
+@media (max-width: 584px) {
+    .register-prize
+    {
+        max-width: 100%;
+    }
+
+    .form .user-details .input-box
+    {
+        margin-bottom: 15px;
+        width: 100%
+    }
+    
+}
+
+
+/* ********************************* Compitive Acount ********************************** */
+
+/* start send-project page */
+
+
+.send-project
+{
+  width: 40% ;
+  text-align: center; 
+  margin: 130px auto 10px auto;
+  padding: 20px;
+}
+
+.send-project img
+{
+  width: 150px;
+  height: 150px;
+}
+.send-project input
+{
+  text-align: right;
+  border-radius: 50px;
+  padding-right: 10px;
+  border-style:none;
+  width: 90%;
+  margin: 10px auto;
+  height: 35px ;
+  border: solid var(--blue) 0.14rem;
+}
+.send-project input[type="submit"]
+{
+  background: var(--blue);
+  padding-left: 15px;
+  width: auto;
+  padding-right: 25px;
+  padding-left: 25px;
+  color: var(--white);
+}
+.newnew select {
+    text-align: right !important;
+    border-radius: 50px !important;
+    padding-right: 10px !important;
+    border-style: none !important;
+    width: 90% !important;
+    margin: 10px auto !important;
+    height: 35px !important;
+    border: solid var(--blue) 0.14rem !important;
+}
+
+@media only screen and (max-width: 1200px)
+{
+  .send-project
+    {
+      width: 80% !important; 
+    }
+}
+/*end send-project page */
+
+
+/* ********************************** Judge Page ********************************** */
+
+.judge .table
+{
+    margin-top: 150px;
+    margin-bottom: 20px;
+    text-align: center;
+    direction: rtl;
+}
+td select
+{
+  border-radius: 10px;
+  background: var(--white);
+  text-align: center;
+}
+.judge .profile1,.judge .profile2,.judge .profile3
+{
+    width: 60px;
+    height: 60px;
+    border-radius:50% ;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1200px){
+    .none
+    {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width:576px)
+{
+    #footer-10
+    {
+        width: 142%;
+    }
+}
+
+#none {
+    background: rgba(0,0,0,0.8);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.activee
+{
+    display:block !important;
+}

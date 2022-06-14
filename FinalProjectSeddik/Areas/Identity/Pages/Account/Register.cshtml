@@ -1,0 +1,51 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+<form class="form-register mx-50 py-3 " asp-route-retUrnurl="@Model.ReturnUrl" method="post">
+   <div asp-validation-summary="All"></div>
+                    <img src="~/image/logo.png" alt="" >
+					<div class="group">
+                        <input asp-for="Input.Name" class="name" type="text" placeholder="الاسم بالكامل" required="">
+                        <span asp-validation-for="Input.Name" class="text-danger"></span>
+                    </div>
+                    <div class="group">
+                        <input asp-for="Input.Email" class="email email" type="email" placeholder="البريد الالكتروني" required="">
+                        <span asp-validation-for="Input.Email" class="text-danger"></span>
+                    </div>
+                    <div class="group">
+                        <input asp-for="Input.Password" class="password" type="password" placeholder="الرقم السري" required="">
+                        <span asp-validation-for="Input.Password" class="text-danger"></span>
+                    </div>
+                    <div class="group">
+                        <input asp-for="Input.ConfirmPassword" class="Confirm-password" type="password" placeholder="تأكيد الرقم السري" required="">
+                        <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                    </div>
+                    <div class="group">
+                        <select asp-for="Input.gender">
+                            <option value="ذكر">ذكر</option>
+                            <option value="انثي">انثي</option>
+                        </select>
+                        <span asp-validation-for="Input.gender" class="text-danger"></span>
+                    </div>
+                   
+                    <div class="group">
+                        <input asp-for="Input.age" placeholder="العمر" class="date" required="">
+                        <span asp-validation-for="Input.age" class="text-danger"></span>
+                    </div>
+                    <div class="group">
+                        <input asp-for="Input.NationalID"  class="nationalID" placeholder="الرقم القومي" required="">
+                        <span asp-validation-for="Input.NationalID" class="text-danger"></span>
+                    </div>
+                    <div class="group">
+                        <input asp-for="Input.mobileNumber" class="phone" type="tel" placeholder="رقم الهاتف" required="">
+                        <span asp-validation-for="Input.mobileNumber" class="text-danger"></span>
+                    </div>
+                                    
+                    <a href="#"><input type="submit" value="تسجيل"></a>
+                    <p style="margin-top: 23px;margin-bottom: -10px;"> ليس لديك حساب؟ <a asp-area="Identity" asp-page="/Account/Login" id="registration">تسجيل الدخول</a></p>
+				</form>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
