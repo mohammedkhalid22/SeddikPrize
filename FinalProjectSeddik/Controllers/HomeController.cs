@@ -34,13 +34,13 @@ namespace FinalProjectSeddik.Controllers
             return View();
         }
 
-        //[HttpPost]
-        //public IActionResult ContactUs(Contact model)
-        //{
-        //    _db.ContactUs.Add(model);
-        //    _db.SaveChanges();
-        //    return RedirectToAction("Index", "Home");
-        //}
+        [HttpPost]
+        public IActionResult ContactUs(Contact model)
+        {
+            _db.ContactUs.Add(model);
+            _db.SaveChanges();
+            return RedirectToAction("Index", "Home");
+        }
 
     }
 }

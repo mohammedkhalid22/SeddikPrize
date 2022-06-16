@@ -28,10 +28,12 @@ namespace FinalProjectSeddik.Controllers
 
 
         // صفحه مراجعة المشروع بتاع الجادج
-        public IActionResult JudgeDeg()
+        public async Task< IActionResult> JudgeDeg()
         {
-            var user = db.Projects.ToList();
-            return View(user);
+            var user = await _userManager.GetUserAsync(User);
+            var proj = db.Projects.Where(p => p.Specialization == user.Specialization).ToList();
+            
+            return View(proj);
         }
 
         public IActionResult CompRate(int id)

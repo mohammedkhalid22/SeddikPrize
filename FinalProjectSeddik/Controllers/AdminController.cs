@@ -25,7 +25,7 @@ namespace FinalProjectSeddik.Controllers
         
         public IActionResult Index(string id)
         {
-           // var contacts = _App.ContactUs.ToList();
+            var contacts = _App.ContactUs.ToList();
             int Comps = 0;
             int Judges = 0;
             foreach (var item in _roleManager.Roles)
@@ -42,9 +42,9 @@ namespace FinalProjectSeddik.Controllers
             ViewBag.CompsCount = Comps;
             ViewBag.JudgesCount = Judges;
             ViewBag.compReg = _App.compRegs.Where(b=>b.IsAccepted==false).ToList();
-           // ViewBag.contact = _App.ContactUs.Where(r => r.Id == id).FirstOrDefault();
-            //ViewBag.requests = _App.ContactUs.Where(r => r.Id == id).FirstOrDefault();
-            return View();
+            ViewBag.contact = _App.ContactUs.Where(r => r.Id == id).FirstOrDefault();
+            ViewBag.requests = _App.ContactUs.Where(r => r.Id == id).FirstOrDefault();
+            return View(contacts);
         }
         //public IActionResult Index()
 
@@ -67,12 +67,12 @@ namespace FinalProjectSeddik.Controllers
             return RedirectToAction("Index","Admin");
         }
 
-        //public IActionResult Contact(string id)
-        //{
-        //    var contact = _App.ContactUs.Where(d => d.Id == id).FirstOrDefault();
-           
-        //    return View(contact);
-        //}
+        public IActionResult Contact(string id)
+        {
+            var contact = _App.ContactUs.Where(d => d.Id == id).FirstOrDefault();
+
+            return View(contact);
+        }
         public IActionResult Result()
         {
             var result = _App.compRegs.ToList();

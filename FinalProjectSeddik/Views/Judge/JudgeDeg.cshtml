@@ -3,13 +3,13 @@
     <!-- start table -->
     
         <div class="judge">
-            <table class="table">
-                <thead>
+            <table class="table table-Danger table-bordered">
+                <thead >
                     <tr>
-                        <th scope="col" class="none">الاسم بالكامل</th>
+                        <th scope="col">الاسم بالكامل</th>
                         <th scope="col">التخصص</th>
-                        <th scope="col" class="none">رابط المشروع</th>
-                        <th scope="col" class="none">النتيجه</th>
+                        <th scope="col">النتيجه</th>
+                        <th scope="col"></th>
 
                     </tr>
                 </thead>
@@ -21,8 +21,6 @@
                     <td>@item.Name</td>
 
                     <td>@item.Specialization</td>
-
-                    <td><a href="@item.DriveLink">@item.DriveLink</a></td>
                
                     <td>
                         @if (item.Result == null)

@@ -1,4 +1,5 @@
 ﻿@{ Layout = null; }
+@model ApplicationUser
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -98,15 +99,11 @@
 
                         </tr>
                         <tr>
-                            <th>الوظيفه</th>
-                            <td>@Model.Qualification</td>
+                            <th>التخصص</th>
+                            <td>@Model.Specialization</td>
 
                         </tr>
-                        <tr>
-                            <th>مكان العمل</th>
-                            <td>@Model.Workplace</td>
-
-                        </tr>
+                       
                         <tr>
                             <th>النوع</th>
                             <td>@Model.gender</td>

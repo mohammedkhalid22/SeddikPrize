@@ -236,9 +236,6 @@ body{
     position:relative;
     width: 100%;
     padding: 35px;
-    display: grid;
-    grid-template-columns: 2fr 1fr; /* h2sm l section da nosen*/
-    grid-gap: 30px;
     margin-top: 10px;
 }
 .details .recentorder
@@ -931,7 +928,6 @@ th, td
     }
      .details
     {
-        grid-template-columns: repeat(1,1fr);
         max-width: 90%;
         width:100%;
         min-width:768px;
@@ -1128,7 +1124,6 @@ th, td
     }
     .details
     {
-        grid-template-columns: repeat(1,1fr);
         max-width: 90%;
         width:100%;
         min-width:768px;

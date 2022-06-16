@@ -41,8 +41,7 @@ nav
 .nav-item .nav-link:focus{
   color: var(--blue);
 }
-
-.phone {
+.navbar-nav .phone {
     box-shadow: var(--box-shadow);
     border-radius: 30px;
     margin: auto 2px;
@@ -100,48 +99,61 @@ nav
 }
 
 /* media query */
-@media only screen and (max-width:992px){
-	nav
-  {
-    background-color: var(--white) !important;
-    text-align: center !important;
-    padding-right: 10px !important;
-    padding-left: 10px !important;
-    direction: ltr !important;
-  }
-
-	.nav-item > .nav-link{
-		color: var(--blue) !important;
-  }
-  .nav-item > .nav-link:hover{
-		color: var(--white) !important;
-    background-color: var(--blue) !important;
-    border-radius: 20px;
-  }
-  .logo{
-			font-weight: 600!important;
-  }
-  .content-banner .first-title{font-size: 30px !important;
-			}
-      .header-btn-div
-      {
-        align-items: center !important;
-      }    
-        
-      .login-icon
-      {
-        margin-left: 2.5rem;
-      }
-
-      .logo-image
-      {
-        display: none !important;
-      }
-
-.navbar-toggler
+@media only screen and (min-width: 768px) and (max-width: 992px) 
 {
-  margin-left: 50% !important;
+    .navbar-toggler {
+       margin-left: 80% !important;
+    }
 }
+@media only screen and (min-width: 567px) and (max-width: 768px) {
+    .navbar-toggler {
+        margin-left: 75% !important;
+    }
+}
+@media only screen and (max-width: 567px) {
+    .navbar-toggler {
+        margin-left: 65% !important;
+    }
+}
+@media only screen and (max-width:992px) {
+    nav {
+        background-color: var(--white) !important;
+        text-align: center !important;
+        padding-right: 10px !important;
+        padding-left: 10px !important;
+        direction: ltr !important;
+    }
+
+    .nav-item > .nav-link {
+        color: var(--blue) !important;
+    }
+
+        .nav-item > .nav-link:hover {
+            color: var(--white) !important;
+            background-color: var(--blue) !important;
+            border-radius: 20px;
+        }
+
+    .logo {
+        font-weight: 600 !important;
+    }
+
+    .content-banner .first-title {
+        font-size: 30px !important;
+    }
+
+    .header-btn-div {
+        align-items: center !important;
+    }
+
+    .login-icon {
+        margin-left: 2.5rem;
+    }
+
+    .logo-image {
+        display: none !important;
+    }
+
 }
 
 /* login-form start */
@@ -173,7 +185,10 @@ nav
             border-top-right-radius: 30px !important;
             text-align: right;
         }
-
+.form-control{
+    background:var(--white) !important;
+    border-radius:2rem !important;
+}
 .input-group-text {
     border-bottom-left-radius: 30px !important;
     border-top-left-radius: 30px !important;
@@ -192,6 +207,11 @@ nav
     cursor: pointer;
     text-decoration: none;
     padding: 1%;
+}
+
+.checkbox label
+{
+    margin-top:1rem;
 }
 
 .login-form #registration {
@@ -214,15 +234,26 @@ nav
 .login-form form p {
     margin-top: 10px;
 }
+.word-log {
+    margin-top: 9%;
+    margin-bottom: 1.6%;
+    margin-left: 16%;
+}
 
-/* login-form end */
-
-/* register start */
-
-.form-register
+@media only screen and (max-width: 992px)
 {
-    width: 50% ;
-    text-align: center; 
+    .word-log {
+        margin-top: 25% !important;
+    }
+        .word-log h1 {
+            font-size: 2.5rem !important;
+        }
+}
+/* login-form end */
+/* register start */
+.form-register {
+    width: 50%;
+    text-align: center;
     margin: 120px auto 0 auto;
 }
 .form-register img
@@ -253,6 +284,11 @@ nav
 .form-register a
 {
     text-decoration: none;
+    color:var(--blue)
+}
+.form-register a:hover
+{
+    color : var(--blue)
 }
 .form-register a input
 {
@@ -1078,10 +1114,7 @@ nav
   border-radius: 100px;
 }
 
-.navbar-toggler-user
-{
-  margin-left: 60% !important;
-}
+
 
 @media only screen and (max-width:992px){
   .nav-profile
@@ -1308,7 +1341,7 @@ nav
   }
 }
 
-@media only screen and (max-width:991px)
+@media only screen and (max-width:992px)
 {
   .change-page ul
   {
@@ -1335,12 +1368,27 @@ nav
   }
 }
 
-@media only screen and (max-width:770px)
+.edit-page {
+    margin-left: 10rem ;
+}
+
+@media only screen and (max-width: 992px) {
+    .edit-page {
+        margin-left: 7rem !important;
+    }
+}
+
+@media only screen and (max-width: 768px)
 {
-  .change-page ul
-  {
-    margin-top: 25%;
-  }
+    .edit-page
+    {
+        margin-left:auto !important;
+    }
+}
+@media only screen and (max-width:770px) {
+    .change-page ul {
+        margin-top: 25%;
+    }
 }
 
 
@@ -1514,6 +1562,12 @@ form .gender-details .category
     }
     
 }
+@media only screen and (max-width: 576px) {
+    .register-prize
+    {
+        padding:60px 30px !important
+    }
+}
 
 
 /* ********************************* Compitive Acount ********************************** */
@@ -1564,6 +1618,12 @@ form .gender-details .category
     height: 35px !important;
     border: solid var(--blue) 0.14rem !important;
 }
+.word-send {
+    margin-top: 12%;
+    margin-bottom: 1.6%;
+    margin-left: 16%;
+    padding-bottom: 2.5%;
+}
 
 @media only screen and (max-width: 1200px)
 {
@@ -1572,24 +1632,34 @@ form .gender-details .category
       width: 80% !important; 
     }
 }
-/*end send-project page */
-
-
-/* ********************************** Judge Page ********************************** */
-
-.judge .table
+@media only screen and (max-width: 992px)
 {
+    .word-send {
+        margin-top: 25% !important;
+    }
+    }
+/*end send-project page */
+/* ********************************** Judge Page ********************************** */
+.judge .table {
     margin-top: 150px;
     margin-bottom: 20px;
     text-align: center;
     direction: rtl;
+    border-color: var(--blue) ;
+    color: var(--blue);
+    font-weight: 500;
+    font-size: 1.3rem;
 }
-td select
-{
-  border-radius: 10px;
-  background: var(--white);
-  text-align: center;
-}
+    .judge .table thead
+    {
+        font-size:1.5rem;
+        font-weight:900
+    }
+    td select {
+        border-radius: 10px;
+        background: var(--white);
+        text-align: center;
+    }
 .judge .profile1,.judge .profile2,.judge .profile3
 {
     width: 60px;
@@ -1626,4 +1696,8 @@ td select
 .activee
 {
     display:block !important;
+}
+.mb-4
+{
+    margin-top:110px !important;
 }

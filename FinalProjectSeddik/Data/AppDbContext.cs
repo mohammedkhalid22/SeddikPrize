@@ -12,7 +12,7 @@ namespace FinalProjectSeddik.Data
         }
         public DbSet<compRegs> compRegs { get; set; }
         public DbSet<Projects> Projects { get; set; }
-        // public DbSet<Contact> ContactUs { get; set; }
+        public DbSet<Contact> ContactUs { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<compRegs>()

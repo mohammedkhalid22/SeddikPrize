@@ -23,7 +23,8 @@ namespace FinalProjectSeddik.Models
         [MaxLength(100, ErrorMessage = "The Tittle cannot be more than 100 characters")]
 
         public string Address { get; set; }
-
+      
+       
 
         [Required]
         [MaxLength(50, ErrorMessage = "The Specialization cannot be more than 100 characters")]
